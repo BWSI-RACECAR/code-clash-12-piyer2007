@@ -32,10 +32,29 @@ class Solution:
             #return type: boolean
 
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-            rev = ""
-            for x in parenthesis:
-                rev = x + rev
-            if rev != parenthesis:
+            rightpar = 0
+            leftpar = 0
+            for i in parenthesis:
+                if i == '(':
+                    rightpar+=1
+                if i == ')':
+                    leftpar+=1
+            rightbrac = 0
+            leftbrac = 0
+            for i in parenthesis:
+                if i == '[':
+                    leftbrac+=1
+                if i == ']':
+                    rightbrac+=
+            rightcurl = 0
+            leftcurl = 0
+            for i in parenthesis:
+                if i == '{':
+                    rightbrac+=1
+                if i == '}':
+                    leftbrac+=1
+
+            if rightpar!=leftpar or rightbrac!=leftbrac or rightcurl!=leftcurl:
                 return False
             return True
             pass
