@@ -32,7 +32,9 @@ class Solution:
             #return type: boolean
 
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-            rev = [parenthesis::-1]
+            rev = ""
+            for x in parenthesis:
+                rev = x + rev
             if rev != parenthesis:
                 return False
             return True
