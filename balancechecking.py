@@ -45,7 +45,7 @@ class Solution:
                 if i == '[':
                     leftbrac+=1
                 if i == ']':
-                    rightbrac+=
+                    rightbrac+=1
             rightcurl = 0
             leftcurl = 0
             for i in parenthesis:
